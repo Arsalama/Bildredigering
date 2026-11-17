@@ -1,14 +1,14 @@
 from PIL import Image, ImageDraw
 
-BLUE = (255,255, 255)
-WHITE = (24, 41, 88)
+WHITE = (255,255, 255)
+BLUE = (24, 41, 88)
 
-im = Image.new("RGB", (160, 100), BLUE)
+im = Image.new("RGB", (180, 110), WHITE)
 
 imd = ImageDraw.Draw(im)
 
-imd.rectangle([(60, 0), (80, 100)], WHITE)
-imd.rectangle([(0, 40), (160, 60)], WHITE)
+imd.rectangle([(50, 0), (80, 110)], BLUE)
+imd.rectangle([(0, 40), (180, 70)], BLUE)
 
 
 im.save("flag.png")
